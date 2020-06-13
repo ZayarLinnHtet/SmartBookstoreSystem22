@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPopularBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/ivPopularBook"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/splashscreen"
+                android:padding="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/ivPopularBook"
+                android:layout_marginTop="4dp"
+                android:padding="4dp">
+
+            <TextView
+                android:id="@+id/tvPopularBookName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android Book"
+                android:layout_toEndOf="@id/ivPopularBook"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/tvPopularAuthorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By Author Name"
+                android:layout_toEndOf="@id/ivPopularBook"
+                android:layout_below="@+id/tvPopularBookName"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/tvBookPublishYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year 1999"
+                android:layout_toEndOf="@id/ivPopularBook"
+                android:layout_below="@+id/tvPopularAuthorName"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/tvBookCategories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Technology"
+                android:layout_toEndOf="@id/ivPopularBook"
+                android:layout_below="@+id/tvBookPublishYear"
+                android:layout_marginLeft="8dp"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
