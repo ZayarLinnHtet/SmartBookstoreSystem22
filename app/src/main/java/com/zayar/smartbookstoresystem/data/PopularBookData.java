@@ -1,19 +1,22 @@
 package com.zayar.smartbookstoresystem.data;
 
-public class BookData {
+import android.content.Intent;
+
+public class PopularBookData {
 
     private int bookId;
+    private int bookImage;
     private String bookName;
     private String authorName;
     private String publishYear;
     private String categories;
 
-    public BookData() {
+    public PopularBookData() {
 
     }
 
-    public BookData(int bookId, String bookName, String authorName, String publishYear, String categories) {
-        this.bookId = bookId;
+    public PopularBookData(int bookImage, String bookName, String authorName, String publishYear, String categories) {
+        this.bookImage = bookImage;
         this.bookName = bookName;
         this.authorName = authorName;
         this.publishYear = publishYear;
@@ -22,8 +25,9 @@ public class BookData {
 
     @Override
     public String toString() {
-        return "BookData{" +
+        return "PopularBookData{" +
                 "bookId=" + bookId +
+                ", bookImage='" + bookImage + '\'' +
                 ", bookName='" + bookName + '\'' +
                 ", authorName='" + authorName + '\'' +
                 ", publishYear='" + publishYear + '\'' +
@@ -37,6 +41,14 @@ public class BookData {
 
     public void setBookId(int bookId) {
         this.bookId = bookId;
+    }
+
+    public int getBookImage() {
+        return bookImage;
+    }
+
+    public void setBookImage(int bookImage) {
+        this.bookImage = bookImage;
     }
 
     public String getBookName() {
