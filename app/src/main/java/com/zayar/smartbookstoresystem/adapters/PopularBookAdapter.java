@@ -25,7 +25,7 @@ public class PopularBookAdapter extends RecyclerView.Adapter<PopularBookAdapter.
     @NonNull
     @Override
     public PopularBookViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_popular, parent, false);
 
         return new PopularBookViewHolder(itemView);
     }

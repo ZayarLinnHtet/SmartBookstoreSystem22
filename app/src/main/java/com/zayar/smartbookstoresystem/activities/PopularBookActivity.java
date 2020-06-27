@@ -37,7 +37,7 @@ public class PopularBookActivity extends AppCompatActivity {
     }
 
     private void preparePopularBookData() {
-        PopularBookData popularBookData = new PopularBookData(R.drawable.book_image, "Grand Canyon National Park", "Lonely Planet", "2020", "Nature");
+        PopularBookData popularBookData = new PopularBookData(R.drawable.book_image, "ငါသာလျှင် ပန်းတပွင့်ဖြစ်၍ နောင်တကြိမ် ပြန်ပွင့်ခွင့်ရခဲ့သော်", "တာရာမင်း‌ေ)", "၁၉၉၈", "ရသ");
         popularBookDataList.add(popularBookData);
 
         popularBookData = new PopularBookData(R.drawable.book_image, "A", "Lonely Planet", "2020", "Nature");

@@ -14,7 +14,7 @@
             android:value="@string/google_maps_key" />
 
         <activity android:name=".activities.PopularBookActivity"></activity>
-        <activity android:name=".activities.SearchBookActivity" />
+        <activity android:name=".activities.SearchBookActivity"></activity>
         <activity android:name=".activities.NearestBookStoreActivity" />
         <activity
             android:name=".activities.SplashScreen"
